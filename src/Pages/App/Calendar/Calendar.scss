@@ -1,0 +1,278 @@
+.calendarpage-container {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: space-around;
+  form {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+  
+    label {
+      text-align: center;
+      font-size: 25px;
+      user-select: none;
+      font-weight: 700;
+    }
+
+    #submit {
+      border-radius: 20px;
+      border: 0;
+      padding: 10px 10px;
+      background-color: #689ee2;
+      color: #ffffff;
+    }
+
+    #date {
+      padding: 10px 10px;
+      border-radius: 20px;
+      border: 1px solid rgba(128, 128, 128, 0.534);
+
+      &:focus {
+        border: 1px solid rgba(128, 128, 128, 0.534);
+        outline: 1px solid rgba(128, 128, 128, 0.534);
+      }
+    }
+
+    #select {
+      padding: 10px 10px;
+      border-radius: 20px;
+      border: 1px solid rgba(128, 128, 128, 0.534);
+
+      &:focus {
+        border: 1px solid rgba(128, 128, 128, 0.534);
+        outline: 1px solid rgba(128, 128, 128, 0.534);
+      }
+    }
+  }
+
+  .calendar-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .labels {
+    border-radius: 20px;
+    width: 700px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .color-label {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+      #today {
+        color: #689ee2;
+        font-size: 25px;
+      }
+
+      #selected {
+        color: #63d66b;
+        font-size: 25px;
+      }
+
+      #dentistday {
+        color: #eb2020;
+        font-size: 25px;
+      }
+
+      #nutritionday {
+        color: #e6e215;
+        font-size: 25px;
+      }
+    }
+  }
+
+  .calendar {
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    width: 700px;
+    height: 310px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.139);
+    box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.139);
+
+    .react-calendar__tile.react-calendar__tile--now.react-calendar__month-view__days__day {
+      background-color: #689ee2;
+    }
+
+    .react-calendar__tile.react-calendar__tile--active.react-calendar__tile--range.react-calendar__tile--rangeStart.react-calendar__tile--rangeEnd.react-calendar__tile--rangeBothEnds.react-calendar__month-view__days__day.react-calendar__month-view__days__day--weekend {
+      background-color: #63d66b;
+    }
+
+    .react-calendar__tile.react-calendar__tile--active.react-calendar__tile--range.react-calendar__tile--rangeStart.react-calendar__tile--rangeEnd.react-calendar__tile--rangeBothEnds.react-calendar__month-view__days__day {
+      background-color: #63d66b;
+    }
+
+    .react-calendar__month-view__weekdays__weekday {
+      abbr {
+        text-decoration: none;
+      }
+    }
+    .react-calendar__navigation__label {
+      font-family: "Montserrat", sans-serif;
+    }
+    .react-calendar__navigation button:enabled:hover,
+    .react-calendar__navigation button:enabled:focus {
+      border-radius: 20px;
+    }
+  }
+}
+
+.calendarpage-container.dark {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: space-around;
+  transition: all 0.3s ease-in-out;
+  form {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    label {
+      text-align: center;
+      font-size: 25px;
+      user-select: none;
+      color: #fff;
+      font-weight: 700;
+    }
+
+    #submit {
+      border-radius: 20px;
+      border: 0;
+      padding: 10px 10px;
+      background-color: #689ee2;
+      color: #ffffff;
+    }
+
+    #date {
+      padding: 10px 10px;
+      border-radius: 20px;
+      border: 1px solid rgba(128, 128, 128, 0.534);
+
+      &:focus {
+        border: 1px solid rgba(128, 128, 128, 0.534);
+        outline: 1px solid rgba(128, 128, 128, 0.534);
+      }
+    }
+
+    #select {
+      padding: 10px 10px;
+      border-radius: 20px;
+      border: 1px solid rgba(128, 128, 128, 0.534);
+
+      &:focus {
+        border: 1px solid rgba(128, 128, 128, 0.534);
+        outline: 1px solid rgba(128, 128, 128, 0.534);
+      }
+    }
+  }
+  .calendar-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .labels.dark {
+    border-radius: 20px;
+    width: 700px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .color-label {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        color: #fff;
+      #today {
+        color: #689ee2;
+        font-size: 25px;
+      }
+
+      #selected {
+        color: #63d66b;
+        font-size: 25px;
+      }
+
+      #dentistday {
+        color: #eb2020;
+        font-size: 25px;
+      }
+
+      #nutritionday {
+        color: #e6e215;
+        font-size: 25px;
+      }
+    }
+  }
+  .calendar.dark {
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    width: 700px;
+    height: 310px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.212);
+    box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.445);
+    background-color: rgba(255, 255, 255, 0.12);
+    color: #fff;
+
+    .react-calendar__tile.react-calendar__tile--now.react-calendar__month-view__days__day {
+      background-color: #689ee2;
+    }
+
+    .react-calendar__tile.react-calendar__tile--active.react-calendar__tile--range.react-calendar__tile--rangeStart.react-calendar__tile--rangeEnd.react-calendar__tile--rangeBothEnds.react-calendar__month-view__days__day.react-calendar__month-view__days__day--weekend {
+      background-color: #63d66b;
+    }
+
+    .react-calendar__tile.react-calendar__tile--active.react-calendar__tile--range.react-calendar__tile--rangeStart.react-calendar__tile--rangeEnd.react-calendar__tile--rangeBothEnds.react-calendar__month-view__days__day {
+      background-color: #63d66b;
+    }
+
+    .react-calendar__month-view__weekdays__weekday {
+      abbr {
+        text-decoration: none;
+      }
+    }
+    .react-calendar__navigation__label {
+      font-family: "Montserrat", sans-serif;
+    }
+    .react-calendar__navigation button:enabled:hover,
+    .react-calendar__navigation button:enabled:focus {
+      border-radius: 20px;
+    }
+    .react-calendar__tile.react-calendar__month-view__days__day {
+      color: #fff;
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.12);
+      }
+    }
+    .react-calendar__tile.react-calendar__month-view__days__day.react-calendar__month-view__days__day--weekend {
+      color: rgb(255, 0, 0);
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.12);
+      }
+    }
+    .react-calendar__navigation__label {
+      color: #fff;
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.12);
+      }
+    }
+    .react-calendar__navigation__arrow {
+      color: #fff;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.12);
+      }
+    }
+  }
+}

@@ -1,0 +1,243 @@
+.inbox-container {
+
+  width: calc(100vw - 250px);
+  height: calc(100vh - 80px);
+  gap: 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .sidebar-inbox {
+    width: 300px;
+    height: 600px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.139);
+    box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.139);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    .compose-btn {
+      padding: 10px 60px;
+      border: none;
+      color: #fff;
+      border-radius: 20px;
+      font-weight: 700;
+      font-size: 14px;
+      font-family: "Montserrat", sans-serif;
+      background-color: #689ee2;
+      cursor: pointer;
+    }
+
+    .list {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      user-select: none;
+
+      .item {
+        padding: 20px;  
+        height: 40px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 16px;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+        border-radius: 20px;
+        svg {
+          font-size: 20px;
+          color: rgb(174, 170, 170);
+        }
+        h3{
+            margin-left: 10px;
+        }
+        #red{
+            color: red;
+        }
+        #green{
+            color: rgb(0, 190, 0);
+        }
+        #purple{
+            color: purple;
+        }
+
+        &:hover{
+            background-color: rgba(128, 128, 128, 0.067);
+        svg{
+            color: #689ee2;
+        }
+
+        h3{
+            color: #689ee2;
+        }
+        
+        }
+      }
+    }
+
+    h2{
+        font-size: 20px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    
+  }
+
+  .inbox-box {
+    width: 1150px;
+    height: 600px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.139);
+    box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.139);
+    background-color: rgba(255, 255, 255, 0.12);
+    position: relative;
+
+    .top-box{
+      width: 100%;
+      height: 60px;
+      top: 0;
+      left: 0;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 10px;
+      padding-left: 20px;
+      svg{
+        font-size: 25px;
+        color: #689ee2;
+      }
+      .search{
+        margin-left: 30px;
+      }
+    } 
+  }
+}
+
+.inbox-container.dark{
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+
+  .sidebar-inbox {
+    width: 300px;
+    height: 600px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.139);
+    box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.139);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.12);
+    color: #fff;
+
+    .nextui-c-cgxxHA-iNZaNK-closeButton-true{
+      font-family: "Montserrat", sans-serif;
+    }
+    .compose-btn {
+      padding: 10px 60px;
+      border: none;
+      color: #fff;
+      border-radius: 20px;
+      font-weight: 700;
+      font-size: 14px;
+      font-family: "Montserrat", sans-serif;
+      background-color: #689ee2;
+      cursor: pointer;
+    }
+
+    .list {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+      user-select: none;
+
+      .item {
+        padding: 20px;  
+        height: 40px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 16px;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+        border-radius: 20px;
+        svg {
+          font-size: 20px;
+          color: rgb(174, 170, 170);
+        }
+        h3{
+            margin-left: 10px;
+        }
+        #red{
+            color: red;
+        }
+        #green{
+            color: rgb(0, 190, 0);
+        }
+        #purple{
+            color: purple;
+        }
+
+        &:hover{
+            background-color: rgba(128, 128, 128, 0.067);
+        svg{
+            color: #689ee2;
+        }
+
+        h3{
+            color: #689ee2;
+        }
+        
+        }
+      }
+    }
+
+    h2{
+        font-size: 20px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+   
+    
+  }
+
+  .inbox-box {
+    width: 1150px;
+    height: 600px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.139);
+    box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.139);
+    background-color: rgba(255, 255, 255, 0.12);
+    position: relative;
+
+    .top-box{
+      width: 100%;
+      height: 60px;
+      top: 0;
+      left: 0;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 10px;
+      padding-left: 20px;
+      svg{
+        font-size: 25px;
+        color: #fff;
+      }
+      .search{
+        margin-left: 30px;
+      }
+    } 
+  }
+}
